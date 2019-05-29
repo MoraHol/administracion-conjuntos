@@ -41,10 +41,12 @@
 			</div>
 			<div class="register-show">
 				<h2>REGISTER</h2>
-				<input type="text" placeholder="Email">
-				<input type="password" placeholder="Contraseña">
-				<input type="password" placeholder="Confirm Password">
+				<form method="post" action="back/register.php">
+				<input type="text" placeholder="Número de identificación" name="id">
+				<input type="text" placeholder="Nombre" name="name">
+				<input type="password" placeholder="Contraseña" name="pass">
 				<input type="submit" value="Register">
+				</form>
 			</div>
 		</div>
 	</div>

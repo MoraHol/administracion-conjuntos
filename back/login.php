@@ -1,7 +1,7 @@
 <?php
     require("DBOperator.php");
  $identification_number = $_POST["id"];
- $password = $_POST["pass"];
+ $password = hash("sha256",$_POST["pass"]);
  echo $password;
  $db = new DBOperator('localhost','root','admin-conjuntos');
  $query = "SELECT * FROM `administrators` WHERE `administrators`.`identification_number` = '".$identification_number."'";

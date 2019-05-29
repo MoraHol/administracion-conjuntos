@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 29-05-2019 a las 20:22:27
--- Versión del servidor: 10.1.40-MariaDB
--- Versión de PHP: 7.1.29
+-- Servidor: localhost
+-- Tiempo de generación: 29-05-2019 a las 22:11:04
+-- Versión del servidor: 10.1.37-MariaDB
+-- Versión de PHP: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,10 +21,10 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `admin-conjuntos`
 --
-
--- --------------------------------------------------------
 CREATE DATABASE `admin-conjuntos`;
-use `admin-conjuntos`;
+USE `admin-conjuntos`;
+-- --------------------------------------------------------
+
 --
 -- Estructura de tabla para la tabla `administrators`
 --
@@ -33,7 +33,7 @@ CREATE TABLE `administrators` (
   `id_administrators` int(11) NOT NULL,
   `name` varchar(45) DEFAULT NULL,
   `identification_number` varchar(45) DEFAULT NULL,
-  `password` varchar(45) DEFAULT NULL
+  `password` varchar(256) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `administrators` (
 --
 
 INSERT INTO `administrators` (`id_administrators`, `name`, `identification_number`, `password`) VALUES
-(1, 'Brayan', '1020569856', 'negrochupon');
+(4, 'alexis holguin', '1002262656', '895d196a3ec8b67ff75fb6bd278bcef9c992838f0e67fd999460721800988918');
 
 -- --------------------------------------------------------
 
@@ -149,7 +149,7 @@ ALTER TABLE `towers`
 -- AUTO_INCREMENT de la tabla `administrators`
 --
 ALTER TABLE `administrators`
-  MODIFY `id_administrators` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_administrators` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `notices`
