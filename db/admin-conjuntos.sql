@@ -23,7 +23,8 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
+CREATE DATABASE `admin-conjuntos`;
+use `admin-conjuntos`;
 --
 -- Estructura de tabla para la tabla `administrators`
 --
